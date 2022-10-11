@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ConnectWallet from "./connectWallet";
 
-export default Header = () => {
+const Header = () => {
   const [currentAccount, connectWallet, disconnectWallet] = ConnectWallet();
   return (
     // NavBar
@@ -35,3 +35,4 @@ export default Header = () => {
     </div>
   );
 };
+export default Header;
