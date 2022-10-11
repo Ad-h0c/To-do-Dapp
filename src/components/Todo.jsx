@@ -191,7 +191,7 @@ const Todo = () => {
           </div>
           <div className="flex items-center px-5 md:pl-0" id="Pending">
             <div className="flex-grow-[0.5] bg bg-darkBlueNormal/50 h-0.5"></div>
-            <div className="flex-grow-0 mx-5 text-lg font-Orb font-semibold tracking-widest dark:text-white">
+            <div className="flex-grow-0 mx-5 text-lg font-Orb font-semibold tracking-widest">
               Pending
             </div>
             <div className="flex-grow-[0.5] bg bg-darkBlueNormal/50 h-0.5"></div>
@@ -203,7 +203,7 @@ const Todo = () => {
           </div>
           <div className="flex items-center px-5 mt-5 md:pl-0" id="Completed">
             <div className="flex-grow-[0.5] bg bg-darkBlueNormal/50 h-0.5"></div>
-            <div className="flex-grow-0 mx-5 text-lg font-Orb font-semibold tracking-widest dark:text-white">
+            <div className="flex-grow-0 mx-5 text-lg font-Orb font-semibold tracking-widest">
               Completed
             </div>
             <div className="flex-grow-[0.5] bg bg-darkBlueNormal/50 h-0.5"></div>
