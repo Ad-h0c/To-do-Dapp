@@ -78,12 +78,12 @@ export default function Hero() {
     }
   };
   return (
-    <div className="animate-fade-in-down flex flex-col items-center container">
+    <div className="flex flex-col items-center container">
       <div className="flex flex-col text-center md:w-[1200px] -mt-10 md:mt-10 md:pr-10 md:pl-10">
-        <h1 className="text-3xl w-80 my-4 self-center font-bold md:font-extrabold md:w-[40rem] md:text-4xl md:tracking-widest">
+        <h1 className="motion-reduce:animate-fade-in-down text-3xl w-80 my-4 self-center font-bold md:font-extrabold md:w-[40rem] md:text-4xl md:tracking-widest">
           Now the life is better than ever.
         </h1>
-        <h2 className="text-2xl px-10 font-semibold self-center my-10 md:px-60 leading-10">
+        <h2 className="motion-reduce:animate-fade-in-down text-2xl px-10 font-semibold self-center my-10 md:px-60 leading-10">
           Use the <p className="inline text-Orange"> Todo App</p> to stay
           organised, and focused. Powered by blockchain, zero down-time and
           seamless experience.
@@ -92,7 +92,7 @@ export default function Hero() {
           className={
             show
               ? "hidden"
-              : "p-2 mx-4 my-1 w-80 border-2 border-Orange self-center rounded-full text-Orange font-bold hover:scale-105 hover:duration-100 hover:transition hover:ease-in-out"
+              : "animate-fade-in-down delay-300 p-2 mx-4 my-1 w-80 border-2 border-Orange self-center rounded-full text-Orange font-bold hover:scale-105 hover:duration-100 hover:transition hover:ease-in-out"
           }
           onClick={(e) => {
             setShow(!show);
@@ -130,12 +130,12 @@ export default function Hero() {
                   />
                 </p>
                 <Link
-                  className="p-2 w-60 border-2 border-darkBlue my-12 self-center rounded-full bg-white text-black hover:scale-105 hover:transition hover:ease-in-out hover:shadow-md hover:delay-100 font-bold"
+                  className="animate-fade-in-down p-2 w-60 border-2 border-darkBlue my-12 self-center rounded-full bg-white text-black hover:scale-105 hover:transition hover:ease-in-out hover:shadow-md hover:delay-100 font-bold"
                   onClick={signupLoader}
                 >
                   {upStatus ? (
                     <BarLoader
-                      className="self-center my-2 ml-12 bg-white"
+                      className="animate-fade-in-down self-center my-2 ml-12 bg-white"
                       width={120}
                     />
                   ) : (
@@ -143,12 +143,12 @@ export default function Hero() {
                   )}
                 </Link>
                 <Link
-                  className="p-2 w-60 border-2 mt-3 self-center rounded-full border-darkBlue bg-white text-black hover:scale-105 hover:shadow-md hover:transition hover:ease-in-out hover:delay-100 font-bold"
+                  className="animate-fade-in-down p-2 w-60 border-2 mt-3 self-center rounded-full border-darkBlue bg-white text-black hover:scale-105 hover:shadow-md hover:transition hover:ease-in-out hover:delay-100 font-bold"
                   onClick={loginLoader}
                 >
                   {isloading ? (
                     <BarLoader
-                      className="self-center my-2 ml-12 bg-white"
+                      className="animate-fade-in-down self-center my-2 ml-12 bg-white"
                       width={120}
                     />
                   ) : (

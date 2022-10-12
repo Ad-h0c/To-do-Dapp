@@ -115,7 +115,7 @@ export default function SignUp() {
                 </Link>
               </p>
               <div className="flex flex-col mb-4">
-                <h1 className="ml-4 -mb-8 mt-3 self-start font-bold text-black">
+                <h1 className="animate-fade-in-down ml-4 -mb-8 mt-3 self-start font-bold text-black">
                   User name
                 </h1>
                 <input
@@ -124,7 +124,7 @@ export default function SignUp() {
                   onChange={(e) => {
                     setUserName(e.target.value);
                   }}
-                  className="w-72 h-10 p-2 mt-9 self-center rounded-md text-black caret-Orange border-2 border-Orange font-bold bg-white shadow-inner"
+                  className="animate-fade-in-down w-72 h-10 p-2 mt-9 self-center rounded-md text-black caret-Orange border-2 border-Orange font-bold bg-white shadow-inner"
                 />
                 <h1 className="ml-4 -mb-8 mt-3 self-start font-bold text-black">
                   Task name
@@ -136,11 +136,11 @@ export default function SignUp() {
                     let taskName = e.target.value;
                     setFirstTask(taskName);
                   }}
-                  className="w-72 h-10 p-2 mt-9 self-center rounded-md text-black caret-Orange border-2 border-Orange font-bold bg-white shadow-inner"
+                  className="animate-fade-in-down w-72 h-10 p-2 mt-9 self-center rounded-md text-black caret-Orange border-2 border-Orange font-bold bg-white shadow-inner"
                 />
               </div>
               <Link
-                className="mt-4 bg-white w-52 text-black h-10 p-2 self-center font-bold hover:shadow-md rounded-full hover:transition hover:scale-105 hover:ease-in-out border-darkBlue border-2"
+                className="animate-fade-in-down xmt-4 bg-white w-52 text-black h-10 p-2 self-center font-bold hover:shadow-md rounded-full hover:transition hover:scale-105 hover:ease-in-out border-darkBlue border-2"
                 onClick={accountCreate}
               >
                 {isloading ? (
@@ -150,7 +150,7 @@ export default function SignUp() {
                 )}
               </Link>
 
-              <div className="flex basis-1/2 text-black mt-4 justify-around">
+              <div className="animate-fade-in-down flex basis-1/2 text-black mt-4 justify-around">
                 <p
                   className="hover:text-black/50 font-semibold"
                   onClick={copyAddress}
@@ -158,7 +158,7 @@ export default function SignUp() {
                   {copyStatus}
                 </p>
                 <p
-                  className="hover:text-black/50 font-semibold"
+                  className="animate-fade-in-down hover:text-black/50 font-semibold"
                   onClick={EtherScan}
                 >
                   View on explorer

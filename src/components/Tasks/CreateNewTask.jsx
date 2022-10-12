@@ -21,7 +21,7 @@ function CreateNewTask() {
         alert("Enter the task name");
       } else {
         const tx = await todoContract.addTask(newTask);
-        setLoading(true);
+        setLoading(!isloading);
         await tx.wait();
         let hash = tx.hash;
         if (hash.length > 0) {

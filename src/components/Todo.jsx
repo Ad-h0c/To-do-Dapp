@@ -108,20 +108,20 @@ const Todo = () => {
               onClick={setname}
             >
               {loadingStatus ? (
-                <BarLoader className="self-center h-6 mt-1 ml-10" />
+                <BarLoader className="animate-fade-in-down self-center h-6 mt-1 ml-10" />
               ) : (
                 "Submit"
               )}
             </button>
             <div className="flex basis-1/2 text-black mt-16 justify-around">
               <p
-                className="hover:text-black/50 font-semibold"
+                className="animate-fade-in-down hover:text-black/50 font-semibold"
                 onClick={copyAddress}
               >
                 {copyStatus}
               </p>
               <p
-                className="hover:text-black/50 font-semibold"
+                className="animate-fade-in-down hover:text-black/50 font-semibold"
                 onClick={() => {
                   EtherScan();
                 }}
@@ -141,7 +141,7 @@ const Todo = () => {
               </Link>
             </p>
             <button
-              className="p-2 w-60 border-2 text-lg mt-[6rem] self-center rounded-full border-darkBlue bg-white hover:scale-105 hover:transition hover:ease-in-out text-black font-bold "
+              className="animate-fade-in-down p-2 w-60 border-2 text-lg mt-[6rem] self-center rounded-full border-darkBlue bg-white hover:scale-105 hover:transition hover:ease-in-out text-black font-bold "
               onClick={connectWallet}
             >
               Connect Wallet
@@ -150,16 +150,18 @@ const Todo = () => {
         </div>
       ) : Alltasks.length == 0 ? (
         <GridLoader
-          className="mt-40 self-center"
+          className="animate-fade-in-down mt-40 self-center"
           color="hsl(25, 97%, 53%)"
           size={30}
         />
       ) : (
         <div className="animate-fade-in-down min-w-[350px] md:min-w-[52rem] md:max-w-[60rem] md:min-h-[40rem]">
           <div className="flex flex-row  justify-between h-16 items-center border-2 border-transparent rounded-lg md:shadow-lg md:shadow-LightGrey">
-            <h1 className="font-Orb font-semibold text-xl ml-4 cursor-default">
+            <h1 className="animate-fade-in-down font-Orb font-semibold text-xl ml-4 cursor-default">
               Welcome,{" "}
-              <p className="text-Orange font-extrabold inline">{fetchedName}</p>
+              <p className="animate-fade-in-down text-Orange font-extrabold inline">
+                {fetchedName}
+              </p>
             </h1>
             <div className="font-Orb font-semibold text-xl mr-8 overflow-hidden cursor-pointer md:mb-1">
               <FcSettings
@@ -177,28 +179,35 @@ const Todo = () => {
                 value={newTask}
                 placeholder="Enter the task name"
                 onChange={(e) => setNewTask(e.target.value)}
-                className="font-overpass h-12 p-2 self-center text-lg w-[20rem] text-veryDarkBlue border-2 bg-white border-indigo-100 rounded-md font-bold focus:outline-none md:w-[35rem]"
+                className="animate-fade-in-down font-overpass h-12 p-2 self-center text-lg w-[20rem] text-veryDarkBlue border-2 bg-white border-indigo-100 rounded-md font-bold focus:outline-none md:w-[35rem]"
               />
               <button
-                className="font-Orb font-bold p-2 mx-2 ml-4 mt-4 pb-2 w-[9rem] h-12 text-black border-indigo-100 self-center border-2 rounded-full border-transparent transition hover:scale-105 ease-in-out md:mt-0"
+                className="animate-fade-in-down font-Orb font-bold p-2 mx-2 ml-4 mt-4 pb-2 w-[9rem] h-12 text-black border-indigo-100 self-center border-2 rounded-full border-transparent transition hover:scale-105 ease-in-out md:mt-0"
                 onClick={createNewTask}
               >
                 {isloading ? (
-                  <ScaleLoader color="hsl(215, 51%, 70%)" height={20} />
+                  <ScaleLoader
+                    className="animate-fade-in-down"
+                    color="hsl(215, 51%, 70%)"
+                    height={20}
+                  />
                 ) : (
                   "New task"
                 )}
               </button>
             </div>
           </div>
-          <div className="flex items-center px-5 md:pl-0" id="Pending">
+          <div
+            className="animate-fade-in-down flex items-center px-5 md:pl-0"
+            id="Pending"
+          >
             <div className="flex-grow-[0.5] bg bg-darkBlueNormal/50 h-0.5"></div>
             <div className="flex-grow-0 mx-5 text-lg font-Orb font-semibold tracking-widest">
               Pending
             </div>
             <div className="flex-grow-[0.5] bg bg-darkBlueNormal/50 h-0.5"></div>
           </div>
-          <div className="flex flex-col mt-2">
+          <div className="animate-fade-in-down flex flex-col mt-2">
             {pendingTasks.map((task, index) => {
               return <PendingTasks key={index} task={task} index={task} />;
             })}
@@ -210,7 +219,7 @@ const Todo = () => {
             </div>
             <div className="flex-grow-[0.5] bg bg-darkBlueNormal/50 h-0.5"></div>
           </div>
-          <div className="flex flex-col mt-2">
+          <div className="animate-fade-in-down flex flex-col mt-2">
             {completedTasks.map((task, index) => {
               return <CompletedTasks key={index} task={task} index={task} />;
             })}

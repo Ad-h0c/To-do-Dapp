@@ -5,7 +5,7 @@ const Header = () => {
   const [currentAccount, connectWallet, disconnectWallet] = ConnectWallet();
   return (
     // NavBar
-    <div className="flex flex-col items-center container">
+    <div className="animate-fade-in-down flex flex-col items-center container">
       <nav className="flex border-2 rounded-b border-transparent md:w-[65rem] mb-20 justify-between p-4">
         {/* Logo */}
         <div className="logo flex flex-row justify-between md:pt-2">
@@ -26,7 +26,7 @@ const Header = () => {
           </button>
         ) : (
           <div className="dropdown">
-            <button className="p-2 w-40 h-8 rounded-full text-sm truncate font-bold bg-black text-white relative md:w-56 md:text-lg md:h-auto md:mr-4">
+            <button className="animate-fade-in-down p-2 w-40 h-8 rounded-full text-sm truncate font-bold bg-black text-white relative md:w-56 md:text-lg md:h-auto md:mr-4">
               {currentAccount}
             </button>
           </div>

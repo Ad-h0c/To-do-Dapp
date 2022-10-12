@@ -24,7 +24,7 @@ const CompletedTasks = (props) => {
   };
 
   return (
-    <div className="flex container flex-row justify-center mt-2">
+    <div className="animate-fade-in-down flex container flex-row justify-center mt-2">
       <h1 className="flex flex-row justify-between font-Orb font-semibold ml-3 p-2 pt-[0.75rem] w-[30rem] h-[3rem] bg-white  text-black border-2 border-teal-600 shadow-lg rounded-lg my-1 md:ml-0">
         {props.task.Task_name}
         <GiReturnArrow

@@ -24,7 +24,7 @@ const PendingTasks = (props) => {
   };
 
   return (
-    <div className="flex container justify-center flex-row mt-2">
+    <div className="animate-fade-in-down flex container justify-center flex-row mt-2">
       <h1 className="font-Orb font-semibold flex flex-row justify-between ml-3 p-2 pt-[0.75rem] w-[30rem] h-[3rem] bg-white  text-black border-2 border-red-500 shadow-lg rounded-lg my-1 md:ml-0">
         {props.task.Task_name}
         <GiCheckMark
