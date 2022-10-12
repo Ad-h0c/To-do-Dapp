@@ -3,3 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input,
+textarea,
+button,
+select,
+a,
+p {
+  -webkit-tap-highlight-color: transparent;
+}
