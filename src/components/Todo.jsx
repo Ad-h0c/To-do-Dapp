@@ -122,10 +122,18 @@ const Todo = () => {
               </p>
               <p
                 className="hover:text-black/50 font-semibold"
-                onClick={EtherScan}
+                onClick={() => {
+                  EtherScan();
+                }}
               >
                 View on explorer
               </p>
+              {/* <a
+                href="javascript:EtherScan()"
+                className="hover:text-black/50 font-semibold"
+              >
+                View on explorer
+              </a> */}
             </div>
           </div>
         </div>
