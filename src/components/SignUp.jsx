@@ -59,6 +59,8 @@ export default function SignUp() {
       let hash = tx.hash;
       if (hash.length > 0) {
         navigate("/login", { replace: true });
+        setUserName("");
+        setFirstTask("");
       }
       setLoading(false);
     } catch (error) {

@@ -6,7 +6,7 @@ import todoAbi from "../../utils/todoApp.json";
 import { useState } from "react";
 
 function CreateNewTask() {
-  const [newTask] = NewTask();
+  const [newTask, setNewTask] = NewTask();
   const [facAddress] = FactoryAddress();
   const [isRender, setRender] = Render();
   const [isloading, setLoading] = useState(false);
@@ -26,6 +26,7 @@ function CreateNewTask() {
         let hash = tx.hash;
         if (hash.length > 0) {
           setRender(!isRender);
+          setNewTask("");
         }
         setLoading(false);
       }
