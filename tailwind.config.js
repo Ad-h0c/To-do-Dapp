@@ -32,13 +32,24 @@ module.exports = {
           "100%": { transform: "rotate(180deg)" },
         },
         spin_reverse: {
-          "0%": { transform: "rotate(1800deg)" },
+          "0%": { transform: "rotate(180deg)" },
           "100%": { transform: "rotate(0deg)" },
+        },
+        "fade-in-down": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-10px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
         },
       },
       animation: {
         "spin-fast": "spin 0.3s linear",
         "spin-reverse": "spin_reverse 0.4s linear",
+        "fade-in-down": "fade-in-down 0.5s ease-out",
       },
     },
   },

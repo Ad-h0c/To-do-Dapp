@@ -81,8 +81,8 @@ const Todo = () => {
   return (
     <div>
       {show ? (
-        <div className="fixed w-80 h-80 ml-10 mt-20 md:mt-44 md:ml-64 self-center cursor-pointer rounded-md drop-shadow-2xl bg-white border-2 border-Orange">
-          <div className="font-Orb flex flex-col justify-center">
+        <div className="fixed animate-fade-in-down w-80 h-80 ml-10 mt-20 md:mt-44 md:ml-64 self-center cursor-pointer rounded-md drop-shadow-2xl border-2 border-Orange">
+          <div className="font-Orb flex flex-col justify-center bg-white">
             <p className="self-center border-[20px] rounded-l-full rounded-r-full rounded-t-none border-black bg-black mr-3 -mt-4">
               <ImCross
                 className="fill-white hover:transition hover:ease-in-out hover:scale-110"
@@ -128,18 +128,12 @@ const Todo = () => {
               >
                 View on explorer
               </p>
-              {/* <a
-                href="javascript:EtherScan()"
-                className="hover:text-black/50 font-semibold"
-              >
-                View on explorer
-              </a> */}
             </div>
           </div>
         </div>
       ) : null}
       {!currentAccount ? (
-        <div className="w-80 h-80 mt-[3rem] border-2 border-Orange self-center cursor-pointer rounded-md shadow-2xl drop-shadow-2xl md:mt-[9rem]">
+        <div className="animate-fade-in-down w-80 h-80 mt-[3rem] border-2 border-Orange self-center cursor-pointer rounded-md shadow-2xl drop-shadow-2xl md:mt-[9rem]">
           <div className="flex flex-col justify-center">
             <p className="self-center border-[20px] rounded-l-full rounded-r-full rounded-t-none border-black bg-black mr-3 -mt-4">
               <Link to="/">
@@ -161,7 +155,7 @@ const Todo = () => {
           size={30}
         />
       ) : (
-        <div className="min-w-[350px] md:min-w-[52rem] md:max-w-[60rem] md:min-h-[40rem]">
+        <div className="animate-fade-in-down min-w-[350px] md:min-w-[52rem] md:max-w-[60rem] md:min-h-[40rem]">
           <div className="flex flex-row  justify-between h-16 items-center border-2 border-transparent rounded-lg md:shadow-lg md:shadow-LightGrey">
             <h1 className="font-Orb font-semibold text-xl ml-4 cursor-default">
               Welcome,{" "}

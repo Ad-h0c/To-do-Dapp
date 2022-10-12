@@ -91,7 +91,7 @@ export default function SignUp() {
           seamless experience.
         </h2>
         {!currentAccount ? (
-          <div className="w-80 h-80 top-1/4 border-2 border-Orange self-center cursor-pointer rounded-md shadow-2xl drop-shadow-2xl">
+          <div className="animate-fade-in-down w-80 h-80 top-1/4 border-2 border-Orange self-center cursor-pointer rounded-md shadow-2xl drop-shadow-2xl">
             <div className="flex flex-col justify-center">
               <p className="self-center border-[20px] rounded-l-full rounded-r-full rounded-t-none border-black bg-black mr-3 -mt-4">
                 <Link to="/">
@@ -107,7 +107,7 @@ export default function SignUp() {
             </div>
           </div>
         ) : (
-          <div className="w-80 h-80 top-1/4 self-center cursor-pointer rounded-md drop-shadow-2xl select-none border-2 border-Orange">
+          <div className="animate-fade-in-down w-80 h-80 top-1/4 self-center cursor-pointer rounded-md drop-shadow-2xl select-none border-2 border-Orange">
             <div className="flex flex-col">
               <p className="self-center border-[20px] rounded-l-full rounded-r-full rounded-t-none border-black bg-black mr-3 -mt-4">
                 <Link to="/">

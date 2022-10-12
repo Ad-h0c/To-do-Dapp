@@ -78,7 +78,7 @@ export default function Hero() {
     }
   };
   return (
-    <div className="flex flex-col items-center container">
+    <div className="animate-fade-in-down flex flex-col items-center container">
       <div className="flex flex-col text-center md:w-[1200px] -mt-10 md:mt-10 md:pr-10 md:pl-10">
         <h1 className="text-3xl w-80 my-4 self-center font-bold md:font-extrabold md:w-[40rem] md:text-4xl md:tracking-widest">
           Now the life is better than ever.
@@ -102,7 +102,7 @@ export default function Hero() {
         </button>
         {show ? (
           !currentAccount ? (
-            <div className="w-80 h-80 top-1/4 border-2 border-Orange self-center cursor-pointer rounded-md shadow-2xl drop-shadow-2xl">
+            <div className="animate-fade-in-down w-80 h-80 top-1/4 border-2 border-Orange self-center cursor-pointer rounded-md shadow-2xl drop-shadow-2xl">
               <div className="flex flex-col justify-center">
                 <p className="self-center border-[20px] rounded-l-full rounded-r-full rounded-t-none border-black bg-black mr-3 -mt-4">
                   <ImCross
@@ -121,7 +121,7 @@ export default function Hero() {
               </div>
             </div>
           ) : (
-            <div className="border-Orange border-2 w-80 h-80 top-1/4 self-center cursor-pointer rounded-md shadow-2xl drop-shadow-2xl">
+            <div className="animate-fade-in-down border-Orange border-2 w-80 h-80 top-1/4 self-center cursor-pointer rounded-md shadow-2xl drop-shadow-2xl">
               <div className="flex flex-col text-center justify-center">
                 <p className="self-center border-[20px] rounded-l-full rounded-r-full rounded-t-none border-black bg-black mr-3 -mt-4">
                   <ImCross
