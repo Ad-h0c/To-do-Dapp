@@ -35,9 +35,9 @@ If there are any issues, mention under the issues or PR.
 
 ### Clone the application to your local machine
 
+Open the terminal and execute the commands below.
+
 ```
-mkdir Todo-Dapp && cd Todo-Dapp
-npm init -y
 git clone https://github.com/Ad-h0c/To-do-Dapp.git
 npm install
 ```
