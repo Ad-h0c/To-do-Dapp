@@ -39,6 +39,7 @@ Open the terminal and execute the commands below.
 
 ```
 git clone https://github.com/Ad-h0c/To-do-Dapp.git
+cd To-do-Dapp
 npm install
 ```
 
