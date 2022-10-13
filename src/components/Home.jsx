@@ -47,7 +47,7 @@ export default function Hero() {
       setLoading(true);
       const value = await checkAccount();
       if (value === true) {
-        navigate("/login", { replace: true });
+        navigate("/App", { replace: true });
         setLoading(false);
       } else if (value === false) {
         setTimeout(() => {

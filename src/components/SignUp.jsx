@@ -58,7 +58,7 @@ export default function SignUp() {
       await tx.wait();
       let hash = tx.hash;
       if (hash.length > 0) {
-        navigate("/login", { replace: true });
+        navigate("/App", { replace: true });
         setUserName("");
         setFirstTask("");
       }

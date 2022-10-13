@@ -75,7 +75,7 @@ const PostHeroConnect = () => {
                 Sign Up
               </Link>
               <Link
-                to=":login"
+                to=":App"
                 className="p-2 w-56 border-2 mt-24 self-center rounded-full border-white bg-white text-black hover:bg-blue-300 hover:text-white font-bold"
               >
                 Sign In
